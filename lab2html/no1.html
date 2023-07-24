@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+</head>
+<body>
+    <form action="form-echo.php">
+        <!-- <input
+            type="text"
+            name="sername"
+            placeholder="Username"
+            pattern="[a-z]{1-100}"
+            title="Username should only contain lowercase letters. e.g. john"
+            > -->
+            <fieldset>   
+                <legend>ข้อ.1</legend>
+                <p><label>ชื่อเต็ม :</label><br>
+                    <input
+                    type="text"
+                    name="ชื่อเต็ม"
+                    placeholder="ชื่อเต็ม"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    ><br>
+        
+                <p><label>ย่อของสาขาวิชา :</label><br>
+                    <input
+                        type="text"
+                        name="ชื่อย่อ"
+                        placeholder="ชื่อย่อ"
+                        pattern="[A-Za-zก-๏]+"
+                        title="ข้อมูลไม่ถูกต้อง"
+                        ><br>
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.2</legend>
+                <p><label>จำนวนเงิน :</label><br>
+                    <input
+                    type="text"
+                    name="จำนวนเงิน"
+                    placeholder="จำนวนเงิน"
+                    pattern="\d+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.3</legend>
+                <p><label>อาหารที่ชื่นชอบ5อย่าง :</label><br>
+                    <input
+                    type="text"
+                    name="เมนูที่1"
+                    placeholder="เมนูที่1"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+                    <input
+                    type="text"
+                    name="เมนูที่2"
+                    placeholder="เมนูที่2"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+                    <input
+                    type="text"
+                    name="เมนูที่3"
+                    placeholder="เมนูที่3"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+                    <input
+                    type="text"
+                    name="เมนูที่4"
+                    placeholder="เมนูที่4"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+                    <input
+                    type="text"
+                    name="เมนูที่5"
+                    placeholder="เมนูที่5"
+                    pattern="[A-Za-zก-๏]+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.4</legend>
+                <p><label>ค่าไฟ 3 เดือนที่ผ่านมา</label><br>
+                    <label>เดือนที่ 1 :</label>
+                    <input
+                    type="text"
+                    name="ค่าไฟเดือนที่ 1"
+                    pattern="\d+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    ><br>
+                    <label>เดือนที่ 2 :</label>
+                    <input
+                    type="text"
+                    name="ค่าไฟเดือนที่ 2"
+                    pattern="\d+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    ><br>
+                    <label>เดือนที่ 3 :</label>
+                    <input
+                    type="text"
+                    name="ค่าไฟเดือนที่ 3"
+                    pattern="\d+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.5</legend>
+                <p><label>รหัสบัตรประชาชน :</label><br>
+                    <input
+                    type="text"
+                    name="รหัสบัตรประชาชน"
+                    placeholder="ID"
+                    pattern="\d{13}"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.6</legend>
+                <p><label>ความพึงพอใจของหนังสือเล่มนี้ :</label><br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจมาก"> พอใจมาก <br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจปลานกลาง"> พอใจปานกลาง <br>
+                    <input type="radio" name="ความพอใจของหนังสือ" value="พอใจน้อย"> พอใจน้อย <br>  
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.7</legend>
+                <p><label>อาการป่วย :</label><br>
+                    <textarea cols="40" rows="5" placeholder="ข้อความ"></textarea>
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.8</legend>
+                <p><label>ช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่ :</label><br>
+                    <input type="radio" name="วัคซีน" value="เคยรับ"> เคยรับ <br>
+                    <input type="radio" name="วัคซีน" value="ไม่เคยรับ"> ไม่เคยรับ <br>
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.9</legend>
+                <p><label>รหัสผ่าน :</label><br>
+                    <input
+                    type="password"
+                    name="รหัสผ่าน"
+                    placeholder="รหัสผ่าน"
+                    pattern="[_-*]\w+"
+                    title="ข้อมูลไม่ถูกต้อง"
+                    >
+            </fieldset>
+            <fieldset>   
+                <legend>ข้อ.10</legend>
+                <p><label>เวลาเริ่มเข้าเรียนและสิ้นสุดเวลาเรียน :</label><br>
+                    <label>เข้าเรียน : </label><input type="time" name="เวลาเริ่มเรียน"> &nbsp;
+                    <label>สิ้นสุดการเรียน : </label><input type="time" name="เวลาเลิกเรียน">
+            </fieldset>
+            <fieldset>
+                <legend>ข้อ.11</legend>
+                <p><label>วันเวลาที่ต้องไปพบแพทย์ : </label><br> 
+                    <input type="date" name=" Date" > 
+               </fieldset>
+            <input type="Submit" value="SUBMIT">
+
+    </form>
+</body>
+</html>
