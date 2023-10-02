@@ -14,13 +14,14 @@ $row = $stmt->fetch(); // 4. ดึงผลลัพธ์ (เนื่อง�
 </head>
 
 <body>
-    <form action="edit.php" method="post">
+    <form action="edit.php" method="POST">
         username : <input type="text" name="username" value ="<?=$row["username"]?>"><br>
         password : <input type="text" name="password" value ="<?=$row["password"]?>"><br>
         name : <input type="text" name="name" value ="<?=$row["name"]?>"><br>
         address : <input type="text" name="address" value ="<?=$row["address"]?>"><br>
         mobile : <input type="text" name="mobile" value ="<?=$row["mobile"]?>"><br>
         email : <input type="text" name="email" value ="<?=$row["email"]?>"><br>
+        <input type="hidden" name="username1" value ="<?=$row["username"]?>">
         <input type="submit" value="edit">
     </form>
 </body>

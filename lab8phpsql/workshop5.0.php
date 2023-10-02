@@ -40,6 +40,7 @@
         email : <input type="text" name="email"><br>
         <input type="submit" name="add" value ="add">
     </form>
+        
 </body>
 
 </html>
